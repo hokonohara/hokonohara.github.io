@@ -9,11 +9,8 @@
         "@protected": true,
         "id": "@id",
         "type": "@type",
-        "companyNumber": "http://schema.org/identifier",
-        "name": {
-          "@id": "ex:name",
-          "@type": "https://schema.org/Text"
-        }
+        "companyNumber": "https://schema.org/identifier",
+        "name": "https://schema.org/Text"
       }
     }
   }
