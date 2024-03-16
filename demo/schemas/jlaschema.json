@@ -1,29 +1,21 @@
 {
-    "@id": "http://localhost/json/schema/jlaschema.json#JapanLegalAccountCredential",
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "title": "Complex Object",
-    "type": "object",
-    "properties": {
-        "id": {
-            "type": "string"
-        },
-        "type": {
-            "type": "string"
-        },
-        "companyNumber": {
-            "type": "string"
-        },
-        "name": {
-            "type": "string"
-        },
-        "edcUrl": {
-            "type": "string"
+    "@context": {
+        "@version": 1.1,
+        "@protected": true,
+        "JapanLegalAccountDemoCredential": {
+            "@id": "http://localhost/json/schema/jlaschema.json#JapanLegalAccountCredential",
+            "@context": {
+                "@version": 1.1,
+                "@protected": true,
+                "id": "@id",
+                "type": "@type",
+                "holderIdentifier": {
+                    "@id": "ctx:holderIdentifier"
+                  },
+                "companyNumber": "https://schema.org/identifier",
+                "name": "https://schema.org/Text",
+                "edcUrl": "https://schema.org/Text"
+            }
         }
-    },
-    "required": [
-        "id",
-        "type",
-        "companyNumber",
-        "name"
-    ]
+    }
 }
