@@ -1,0 +1,29 @@
+{
+    "@id": "http://localhost/json/schema/jlaschema.json#JapanLegalAccountCredential",
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Complex Object",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "string"
+        },
+        "type": {
+            "type": "string"
+        },
+        "companyNumber": {
+            "type": "string"
+        },
+        "name": {
+            "type": "string"
+        },
+        "edcUrl": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "id",
+        "type",
+        "companyNumber",
+        "name"
+    ]
+}
