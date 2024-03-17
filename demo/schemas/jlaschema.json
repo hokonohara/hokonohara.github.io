@@ -1,7 +1,6 @@
 {
   "@context": {
-    "@version": 1.1,
-    "@protected": true,
+    "@version": 1.2,
     "JLACredential": {
       "@id": "https://hokonohara.github.io/demo/schemas/jlaschema.json#JLACredential",
       "@context": {
