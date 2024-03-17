@@ -20,11 +20,17 @@
         "id": "@id",
         "type": "@type",
         "companyNumber": "https://schema.org/identifier",
-        "name": "https://schema.org/Text",
+        "name": {
+          "@id": "ex:name",
+          "@type": "https://schema.org/Text"
+        },
+        "edcUrl": {
+          "@id": "ex:edcUrl",
+          "@type": "https://schema.org/Text"
+        },
         "holderIdentifier": {
           "@id": "ctx:holderIdentifier"
-        },
-        "edcUrl": "https://schema.org/Text"
+        }
       }
     },
     "MembershipCredential": {
